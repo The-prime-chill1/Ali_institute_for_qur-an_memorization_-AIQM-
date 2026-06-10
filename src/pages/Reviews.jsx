@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 import '../css/reviews.css';
+// import rvwBg from '../assets/rvw.jpg';
 
 const Reviews = () => {
   useEffect(() => {
@@ -11,37 +12,37 @@ const Reviews = () => {
     {
       id: 1,
       name: 'Atiya Kolawole',
-      role: 'Hafiza Graduate',
+      role: 'Hafidh Graduate',
       rating: 5,
       comment: 'AIQM transformed my relationship with the Qur\'an and strengthened my Islamic character. The teachers are dedicated and the environment is spiritually uplifting.',
-      date: 'December 2024',
+      date: 'December 2019',
       initial: 'AK'
     },
     {
       id: 2,
       name: 'Afif Kolawole',
-      role: 'Current Student',
-      rating: 5,
+      role: 'Hafidh Graduate',
+      rating: 4.5,
       comment: 'The structured revision system helped me retain everything I memorized. The daily, weekly, and monthly revision schedules are very effective.',
-      date: 'November 2024',
+      date: 'November 2022',
       initial: 'AK'
     },
     {
       id: 3,
       name: 'Muhsin Kolawole',
-      role: 'Hafiz Graduate',
+      role: 'Hafidh Graduate',
       rating: 5,
       comment: 'The teachers were patient and supportive throughout my Hifz journey. I completed my memorization in just 2 years with their guidance.',
-      date: 'October 2024',
+      date: 'October 2022',
       initial: 'MK'
     },
     {
       id: 4,
       name: 'Azeemah  Olaniyan',
-      role: 'Graduate',
+      role: 'Hafidh Graduate',
       rating: 5,
       comment: 'AIQM provided a disciplined environment that made memorization easier for my daughter. I highly recommend this institute.',
-      date: 'September 2024',
+      date: 'September 2020',
       initial: 'AO'
     },
     {
@@ -50,23 +51,23 @@ const Reviews = () => {
       role: 'Alumni',
       rating: 5,
       comment: 'The combination of Qur\'an memorization and moral training was life-changing. AIQM builds both knowledge and character.',
-      date: 'August 2024',
+      date: 'August 2021',
       initial: 'AT'
     },
     {
       id: 6,
       name: 'Fatimah Bello',
       role: 'Current Student',
-      rating: 5,
+      rating: 3,
       comment: 'I love the supportive environment and the focus on proper Tajweed. My recitation has improved tremendously.',
-      date: 'July 2024',
+      date: 'July 2026',
       initial: 'FB'
     },
     {
       id: 7,
       name: 'Umar Abdullahi',
-      role: 'Graduate',
-      rating: 5,
+      role: 'Current Student',
+      rating: 2.5,
       comment: 'The boarding facilities are excellent and the revision system ensures you never forget what you\'ve memorized.',
       date: 'June 2024',
       initial: 'UA'
@@ -78,6 +79,15 @@ const Reviews = () => {
       rating: 5,
       comment: 'My son has become more disciplined and focused since joining AIQM. The Islamic character building is outstanding.',
       date: 'May 2024',
+      initial: 'AS'
+    },
+    {
+      id: 9,
+      name: 'Aminah Odunsi',
+      role: 'Hafidh Graduate',
+      rating: 5,
+      comment: 'AIQM provided a disciplined environment that made memorization easier for me. I highly recommend this institute.',
+      date: 'May 2021',
       initial: 'AS'
     }
   ]);

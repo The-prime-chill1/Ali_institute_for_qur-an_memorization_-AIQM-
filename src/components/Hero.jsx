@@ -60,7 +60,7 @@ const Hero = () => {
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <h1 className="hero-animate">ALI INSTITUTE FOR QUR'AN MEMORIZATION (AIQM)</h1>
-        <p className="hero-animate">Nurturing Future Huffaz Through Knowledge, Discipline and Excellence.</p>
+        <p className="hero-animate">Memorization With Righteousneess</p>
         <div className="hero-buttons hero-animate">
           <Link to="/admission" className="btn btn-primary">Apply For Admission</Link>
           <Link to="/contact" className="btn btn-outline">Contact Us</Link>
