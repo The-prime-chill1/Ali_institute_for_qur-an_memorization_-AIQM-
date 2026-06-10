@@ -37,8 +37,8 @@ const Reviews = () => {
     },
     {
       id: 4,
-      name: 'Azimah Adeola Olaniyan',
-      role: 'Parent',
+      name: 'Azeemah  Olaniyan',
+      role: 'Graduate',
       rating: 5,
       comment: 'AIQM provided a disciplined environment that made memorization easier for my daughter. I highly recommend this institute.',
       date: 'September 2024',

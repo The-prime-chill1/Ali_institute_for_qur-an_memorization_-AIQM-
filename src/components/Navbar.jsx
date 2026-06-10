@@ -77,6 +77,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../css/navbar.css';
+import aiqmLogo from '../assets/AIQM_Logo.jpeg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -96,9 +97,7 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -107,15 +106,31 @@ const Navbar = () => {
     setIsOpen(false);
   }, [location]);
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [isOpen]);
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <Link to="/" className="nav-logo">
           <div className="logo">
-            <span className="logo-icon">🕌</span>
+            <img
+              src={aiqmLogo}
+              alt="AIQM Logo"
+              style={{
+                width: '44px',
+                height: '44px',
+                borderRadius: '50%',
+                objectFit: 'cover',
+                flexShrink: 0,
+                display: 'block',
+              }}
+            />
             <div>
               <h3>AIQM</h3>
-              <p>Qur'an Memorization Institute</p>
+              <p>Memorization with Righteousness</p>
             </div>
           </div>
         </Link>
@@ -124,7 +139,10 @@ const Navbar = () => {
           <ul className="nav-links">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <Link to={link.path} className={location.pathname === link.path ? 'active' : ''}>
+                <Link
+                  to={link.path}
+                  className={location.pathname === link.path ? 'active' : ''}
+                >
                   {link.name}
                 </Link>
               </li>
@@ -141,21 +159,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-  // Add to src/components/Navbar.jsx
-useEffect(() => {
-  if (isOpen) {
-    document.body.style.overflow = 'hidden';
-    document.body.classList.add('menu-open');
-  } else {
-    document.body.style.overflow = '';
-    document.body.classList.remove('menu-open');
-  }
-  
-  return () => {
-    document.body.style.overflow = '';
-    document.body.classList.remove('menu-open');
-  };
-}, [isOpen]);
 };
 
 export default Navbar;

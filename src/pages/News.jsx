@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import '../css/news.css';
+import tjwBg from '../assets/tjw.jpg';
+import gradBg from '../assets/grad.jpg';
+import rmdBg from '../assets/rmd.jpg';
+import schBg from '../assets/sch.jpg';
+import qrBg from '../assets/qr.jpg';
+import heroBg from '../assets/hero.jpg';
 
 const News = () => {
   useEffect(() => {
@@ -18,7 +24,7 @@ const News = () => {
       category: 'Admissions',
       date: 'January 15, 2025',
       excerpt: 'Registration for the new academic session is now open. Limited seats available for the upcoming session. Apply now to secure your place.',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600',
+      image: tjwBg,
       featured: true
     },
     {
@@ -27,7 +33,7 @@ const News = () => {
       category: 'Graduation',
       date: 'December 10, 2024',
       excerpt: 'Celebrating the success of our 50 new Huffaz graduates. Join us for this memorable occasion as we honor their achievement.',
-      image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600',
+      image: gradBg,
       featured: false
     },
     {
@@ -36,7 +42,7 @@ const News = () => {
       category: 'Ramadan Programs',
       date: 'March 1, 2025',
       excerpt: 'Special Taraweeh sessions and Qur\'an completion programs during the blessed month of Ramadan. Open to all students.',
-      image: 'https://images.unsplash.com/photo-1584551246679-258d1e3c2865?w=600',
+      image: rmdBg,
       featured: false
     },
     {
@@ -45,16 +51,16 @@ const News = () => {
       category: 'School Announcements',
       date: 'November 20, 2024',
       excerpt: 'Expansion of boarding facilities to accommodate more students with modern amenities and improved living conditions.',
-      image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600',
+      image: schBg,
       featured: false
     },
     {
       id: 5,
-      title: 'Qur\'an Competition 2024',
+      title: 'Qur\'an Recitation ',
       category: 'Events',
       date: 'October 5, 2024',
-      excerpt: 'Annual inter-school Qur\'an memorization competition. Students from various schools will participate.',
-      image: 'https://images.unsplash.com/photo-1542816417-0983c9c9adbc?w=600',
+      excerpt: 'Join us for a beautiful Qur\'an recitation session.',
+      image: qrBg,
       featured: false
     },
     {
@@ -63,7 +69,7 @@ const News = () => {
       category: 'Events',
       date: 'September 20, 2024',
       excerpt: 'Semester parent-teacher meeting to discuss student progress and development.',
-      image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600',
+      image: heroBg,
       featured: false
     }
   ];

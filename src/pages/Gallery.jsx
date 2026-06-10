@@ -1,5 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import '../css/gallery.css';
+import hifzBg from '../assets/hifz.jpg';
+import gradBg from '../assets/grad.jpg';
+import awarBg from '../assets/award.jpg';
+import hstBg from '../assets/hst.jpg';
+import schBg from '../assets/sch.jpg';
+import qrBg from '../assets/qr.jpg';
+import fpBg from '../assets/fp.jpg';
+import rmdBg from '../assets/rmd.jpg';
+import tjwBg from '../assets/tjw.jpg';
+import stdBg from '../assets/std.jpg';
+import lectBg from '../assets/lect.jpg';
+import onoBg from '../assets/ono.jpg';
 
 const Gallery = () => {
   useEffect(() => {
@@ -19,18 +31,18 @@ const Gallery = () => {
   ];
 
   const galleryImages = [
-    { id: 1, category: 'hifz', title: 'Hifz Class Session', description: 'Students engaged in Qur\'an memorization', image: 'https://images.unsplash.com/photo-1584551246679-258d1e3c2865?w=600' },
-    { id: 2, category: 'hifz', title: 'One-on-One Revision', description: 'Teacher guiding student through revision', image: 'https://images.unsplash.com/photo-1582653291997-079a1f04e6a1?w=600' },
-    { id: 3, category: 'graduation', title: 'Graduation Ceremony 2024', description: 'Celebrating our new Huffaz', image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600' },
-    { id: 4, category: 'graduation', title: 'Award Presentation', description: 'Honoring outstanding students', image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600' },
-    { id: 5, category: 'boarding', title: 'Student Dormitory', description: 'Comfortable boarding facilities', image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600' },
-    { id: 6, category: 'boarding', title: 'Dining Hall', description: 'Healthy meals for students', image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600' },
-    { id: 7, category: 'activities', title: 'Qur\'an Competition', description: 'Students showcasing their memorization', image: 'https://images.unsplash.com/photo-1542816417-0983c9c9adbc?w=600' },
-    { id: 8, category: 'activities', title: 'Sports Activity', description: 'Physical education and recreation', image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=600' },
-    { id: 9, category: 'islamic', title: 'Friday Prayer', description: 'Jumu\'ah congregation', image: 'https://images.unsplash.com/photo-1584551246679-258d1e3c2865?w=600' },
-    { id: 10, category: 'islamic', title: 'Ramadan Program', description: 'Special Ramadan activities', image: 'https://images.unsplash.com/photo-1582653291997-079a1f04e6a1?w=600' },
-    { id: 11, category: 'hifz', title: 'Tajweed Class', description: 'Learning proper pronunciation', image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600' },
-    { id: 12, category: 'activities', title: 'Study Session', description: 'Group study and discussion', image: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600' }
+    { id: 1, category: 'hifz', title: 'Hifz Class Session', description: 'Students engaged in Qur\'an memorization', image: hifzBg },
+    { id: 2, category: 'hifz', title: 'One-on-One Revision', description: 'Teacher guiding student through revision', image: onoBg },
+    { id: 3, category: 'graduation', title: 'Graduation Ceremony 2024', description: 'Celebrating our new Huffaz', image: gradBg },
+    { id: 4, category: 'graduation', title: 'Award Presentation', description: 'Honoring outstanding students', image: awarBg },
+    { id: 5, category: 'boarding', title: 'Hostel', description: 'Comfortable boarding facilities', image: hstBg },
+    { id: 6, category: 'boarding', title: 'Madrasah ', description: 'Clean Environment', image: schBg },
+    { id: 7, category: 'activities', title: 'Qur\'an Recitation', description: 'Students showcasing their memorization', image: qrBg },
+    { id: 8, category: 'activities', title: 'Lecture', description: 'Theoretical knowledge sharing', image: lectBg },
+    { id: 9, category: 'islamic', title: 'Friday Prayer', description: 'Jumu\'ah congregation', image: fpBg },
+    { id: 10, category: 'islamic', title: 'Ramadan Program', description: 'Special Ramadan activities', image: rmdBg },
+    { id: 11, category: 'hifz', title: 'Tajweed Class', description: 'Learning proper pronunciation', image: tjwBg },
+    { id: 12, category: 'activities', title: 'Study Session', description: 'Group study and discussion', image: stdBg }
   ];
 
   const filteredImages = selectedCategory === 'all' 
@@ -38,6 +50,10 @@ const Gallery = () => {
     : galleryImages.filter(img => img.category === selectedCategory);
 
   return (
+
+
+
+    
     <main className="gallery-page">
       <div className="page-header">
         <div className="container">

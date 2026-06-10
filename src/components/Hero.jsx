@@ -35,6 +35,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/home.css';
+import heroBg from '../assets/hero.jpg';
 
 const Hero = () => {
   useEffect(() => {
@@ -47,7 +48,15 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero">
+    <section
+      className="hero"
+      style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <h1 className="hero-animate">ALI INSTITUTE FOR QUR'AN MEMORIZATION (AIQM)</h1>
