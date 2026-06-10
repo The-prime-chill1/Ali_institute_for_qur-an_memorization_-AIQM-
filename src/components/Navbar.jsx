@@ -1,0 +1,161 @@
+// // src/components/Navbar.jsx
+// import React, { useState, useEffect } from 'react';
+// import { Link, useLocation } from 'react-router-dom';
+// import { FaBars, FaTimes } from 'react-icons/fa';
+// import '../css/navbar.css';
+
+// const Navbar = () => {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const [scrolled, setScrolled] = useState(false);
+//   const location = useLocation();
+
+//   const navLinks = [
+//     { name: 'Home', path: '/' },
+//     { name: 'About', path: '/about' },
+//     { name: 'Programs', path: '/programs' },
+//     { name: 'Admission', path: '/admission' },
+//     { name: 'Fees', path: '/fees' },
+//     { name: 'Gallery', path: '/gallery' },
+//     { name: 'Reviews', path: '/reviews' },
+//     { name: 'News', path: '/news' },
+//     { name: 'Contact', path: '/contact' },
+//   ];
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       setScrolled(window.scrollY > 50);
+//     };
+//     window.addEventListener('scroll', handleScroll);
+//     return () => window.removeEventListener('scroll', handleScroll);
+//   }, []);
+
+//   useEffect(() => {
+//     setIsOpen(false);
+//   }, [location]);
+
+//   return (
+//     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+//       <div className="nav-container">
+//         <Link to="/" className="nav-logo">
+//           <div className="logo">
+//             <span className="logo-icon">🕌</span>
+//             <div>
+//               <h3>AIQM</h3>
+//               <p>Ali Institute for Qur'an Memorization</p>
+//             </div>
+//           </div>
+//         </Link>
+
+//         <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
+//           <ul className="nav-links">
+//             {navLinks.map((link) => (
+//               <li key={link.name}>
+//                 <Link to={link.path} className={location.pathname === link.path ? 'active' : ''}>
+//                   {link.name}
+//                 </Link>
+//               </li>
+//             ))}
+//           </ul>
+//           <Link to="/admission" className="btn-primary nav-apply-btn">
+//             Apply Now
+//           </Link>
+//         </div>
+
+//         <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+//           {isOpen ? <FaTimes /> : <FaBars />}
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+
+
+
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import '../css/navbar.css';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  const navLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Programs', path: '/programs' },
+    { name: 'Admission', path: '/admission' },
+    { name: 'Fees', path: '/fees' },
+    { name: 'Gallery', path: '/gallery' },
+    { name: 'Reviews', path: '/reviews' },
+    { name: 'News', path: '/news' },
+    { name: 'Contact', path: '/contact' },
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
+  return (
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <div className="nav-container">
+        <Link to="/" className="nav-logo">
+          <div className="logo">
+            <span className="logo-icon">🕌</span>
+            <div>
+              <h3>AIQM</h3>
+              <p>Qur'an Memorization Institute</p>
+            </div>
+          </div>
+        </Link>
+
+        <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
+          <ul className="nav-links">
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <Link to={link.path} className={location.pathname === link.path ? 'active' : ''}>
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link to="/admission" className="btn-primary nav-apply-btn">
+            Apply Now
+          </Link>
+        </div>
+
+        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </div>
+      </div>
+    </nav>
+  );
+  // Add to src/components/Navbar.jsx
+useEffect(() => {
+  if (isOpen) {
+    document.body.style.overflow = 'hidden';
+    document.body.classList.add('menu-open');
+  } else {
+    document.body.style.overflow = '';
+    document.body.classList.remove('menu-open');
+  }
+  
+  return () => {
+    document.body.style.overflow = '';
+    document.body.classList.remove('menu-open');
+  };
+}, [isOpen]);
+};
+
+export default Navbar;

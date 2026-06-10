@@ -1,0 +1,148 @@
+/* src/css/about.css */
+.page-header {
+  background: linear-gradient(135deg, var(--brown), var(--dark-brown));
+  color: var(--white);
+  padding: 120px 0 60px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.page-header h1 {
+  margin-bottom: 1rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: var(--secondary-brown);
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, var(--cream), var(--gold));
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder span {
+  font-size: 5rem;
+}
+
+.vision-mission {
+  background: var(--light-cream);
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.vision-card, .mission-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.vision-card:hover, .mission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.vision-card h3, .mission-card h3 {
+  color: var(--gold);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.director-section {
+  background: var(--cream);
+}
+
+.director-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.director-image .image-placeholder {
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+}
+
+.director-message p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: var(--secondary-brown);
+}
+
+.director-signature {
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .vm-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .director-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

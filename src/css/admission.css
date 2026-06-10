@@ -1,0 +1,130 @@
+/* src/css/admission.css */
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.timeline-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: var(--gold);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 auto 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.step-content {
+  font-weight: 500;
+  color: var(--brown);
+}
+
+.step-line {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background: var(--gold);
+  z-index: 1;
+}
+
+.timeline-step:last-child .step-line {
+  display: none;
+}
+
+.admission-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--brown);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--secondary-brown);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.1);
+}
+
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #dc3545;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.success-message {
+  background: #28a745;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+  }
+  
+  .step-line {
+    display: none;
+  }
+  
+  .timeline-step {
+    margin-bottom: 1rem;
+  }
+  
+  .admission-form {
+    padding: 1.5rem;
+  }
+}

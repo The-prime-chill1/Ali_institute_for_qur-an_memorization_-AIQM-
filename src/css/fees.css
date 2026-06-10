@@ -1,0 +1,77 @@
+/* src/css/fees.css */
+.fees-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fees-card h2 {
+  text-align: center;
+  color: var(--gold);
+  margin-bottom: 2rem;
+}
+
+.fee-items {
+  margin-bottom: 2rem;
+}
+
+.fee-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--cream);
+  transition: var(--transition);
+}
+
+.fee-row:hover {
+  background: var(--cream);
+  padding-left: 1.5rem;
+}
+
+.fee-item {
+  font-weight: 500;
+  color: var(--brown);
+}
+
+.fee-amount {
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.notice-box {
+  background: #fff3cd;
+  border-left: 4px solid var(--gold);
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: 5px;
+}
+
+.notice-box h3 {
+  color: #856404;
+  margin-bottom: 0.5rem;
+}
+
+.notice-box p {
+  color: #856404;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.contact-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .contact-buttons {
+    flex-direction: column;
+  }
+}

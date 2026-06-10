@@ -1,0 +1,129 @@
+/* src/css/programs.css */
+.programs-info {
+  margin-bottom: 3rem;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.info-card {
+  background: linear-gradient(135deg, var(--gold), #b38c1f);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.info-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.all-programs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.program-detail-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.program-detail-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.program-detail-card h2 {
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.program-description {
+  color: var(--secondary-brown);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.program-duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cream);
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  color: var(--brown);
+}
+
+.program-benefits {
+  margin-top: 1rem;
+}
+
+.program-benefits h4 {
+  margin-bottom: 0.5rem;
+  color: var(--brown);
+}
+
+.program-benefits ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.program-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--secondary-brown);
+}
+
+.program-benefits li svg {
+  color: var(--gold);
+}
+
+.revision-system {
+  background: var(--light-cream);
+  padding: 3rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.revision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.revision-card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.revision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.revision-card h3 {
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .revision-system {
+    padding: 1.5rem;
+  }
+}

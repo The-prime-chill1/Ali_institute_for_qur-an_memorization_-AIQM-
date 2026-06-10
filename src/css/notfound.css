@@ -1,0 +1,26 @@
+/* src/css/notfound.css */
+.notfound-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--cream);
+}
+
+.notfound-content h1 {
+  font-size: 8rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.notfound-content h2 {
+  font-size: 2rem;
+  color: var(--brown);
+  margin-bottom: 1rem;
+}
+
+.notfound-content p {
+  color: var(--secondary-brown);
+  margin-bottom: 2rem;
+}
