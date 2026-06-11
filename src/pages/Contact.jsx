@@ -230,8 +230,11 @@ const Contact = () => {
               <div className="info-card">
                 <FaPhone className="info-icon" />
                 <h3>Phone Numbers</h3>
-                <p>+234 903 978 5732<br />
-                +234 808 654 3371</p>
+               <p>
+                    +234 903 978 5732<br />
+                    +234 808 654 3371<br />
+                    +234 803 069 4989
+                  </p>
               </div>
               
               <div className="info-card">
