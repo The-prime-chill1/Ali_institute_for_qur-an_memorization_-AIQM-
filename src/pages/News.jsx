@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import '../css/news.css';
-import tjwBg from '../../public/assets/tjw.jpg';
-import gradBg from '../../public/assets/grad.jpg';
-import rmdBg from '../../public/assets/rmd.jpg';
-import schBg from '../../public/assets/sch.jpg';
-import qrBg from '../../public/assets/qr.jpg';
-import heroBg from '../../public/assets/hero.jpg';
+
 
 const News = () => {
+
+  const tjwBg = "/assets/tjw.jpg";
+const gradBg = "/assets/grad.jpg";
+const rmdBg = "/assets/rmd.jpg";
+const schBg = "/assets/sch.jpg";
+const qrBg = "/assets/qr.jpg";
+const heroBg = "/assets/hero.jpg";
+
   useEffect(() => {
     document.title = 'AIQM - News & Events | Ali Institute For Qur\'an Memorization';
   }, []);

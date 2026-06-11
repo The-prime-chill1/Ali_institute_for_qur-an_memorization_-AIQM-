@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import '../css/gallery.css';
-import hifzBg from '../../public/assets/hifz.jpg';
-import gradBg from '../../public/assets/grad.jpg';
-import awarBg from '../../public/assets/award.jpg';
-import hstBg from '../../public/assets/hst.jpg';
-import schBg from '../../public/assets/sch.jpg';
-import qrBg from '../../public/assets/qr.jpg';
-import fpBg from '../../public/assets/fp.jpg';
-import rmdBg from '../../public/assets/rmd.jpg';
-import tjwBg from '../../public/assets/tjw.jpg';
-import stdBg from '../../public/assets/std.jpg';
-import lectBg from '../../public/assets/lect.jpg';
-import onoBg from '../../public/assets/ono.jpg';
 
 const Gallery = () => {
+
+  const hifzBg = "/assets/hifz.jpg";
+  const gradBg = "/assets/grad.jpg";
+  const awarBg = "/assets/award.jpg";
+  const hstBg = "/assets/hst.jpg";
+  const schBg = "/assets/sch.jpg";
+  const qrBg = "/assets/qr.jpg";
+  const fpBg = "/assets/fp.jpg";
+  const rmdBg = "/assets/rmd.jpg";
+  const tjwBg = "/assets/tjw.jpg";
+  const stdBg = "/assets/std.jpg";
+  const lectBg = "/assets/lect.jpg";
+  const onoBg = "/assets/ono.jpg";
+
   useEffect(() => {
     document.title = 'AIQM - Gallery | Ali Institute For Qur\'an Memorization';
   }, []);

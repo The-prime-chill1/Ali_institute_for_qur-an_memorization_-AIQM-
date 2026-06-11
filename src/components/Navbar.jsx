@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../css/navbar.css';
-import aiqmLogo from '../../public/assets/aiqm_Logo.jpeg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +41,7 @@ const Navbar = () => {
         <Link to="/" className="nav-logo">
           <div className="logo">
             <img
-              src={aiqmLogo}
+              src="/assets/aiqm_Logo.jpeg"
               alt="AIQM Logo"
               style={{
                 width: '44px',
