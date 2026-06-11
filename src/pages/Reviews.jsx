@@ -39,9 +39,9 @@ const Reviews = () => {
     {
       id: 4,
       name: 'Azeemah  Olaniyan',
-      role: 'Hafidh Graduate',
+      role: 'Hafidha Graduate',
       rating: 5,
-      comment: 'AIQM provided a disciplined environment that made memorization easier for my daughter. I highly recommend this institute.',
+      comment: 'AIQM provided a disciplined environment that made memorization easier for me. I highly recommend this institute.',
       date: 'September 2020',
       initial: 'AO'
     },
@@ -60,7 +60,7 @@ const Reviews = () => {
       role: 'Current Student',
       rating: 3,
       comment: 'I love the supportive environment and the focus on proper Tajweed. My recitation has improved tremendously.',
-      date: 'July 2026',
+      date: 'March 2026',
       initial: 'FB'
     },
     {
