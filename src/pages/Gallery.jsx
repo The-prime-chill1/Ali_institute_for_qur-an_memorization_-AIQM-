@@ -6,7 +6,7 @@ const Gallery = () => {
   const hifzBg = "/assets/hifz.jpg";
   const gradBg = "/assets/grad.jpg";
   const awarBg = "/assets/award.jpg";
-  const hstBg = "/assets/hst.jpg";
+  const hstBg = "../assets/hst.jpg";
   const schBg = "/assets/sch.jpg";
   const qrBg = "/assets/qr.jpg";
   const fpBg = "/assets/fp.jpg";

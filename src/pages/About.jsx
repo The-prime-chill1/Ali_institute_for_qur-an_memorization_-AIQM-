@@ -1,11 +1,10 @@
-// src/pages/About.jsx
-// import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { FaRuler, FaHeart, FaStar, FaHandshake, FaShieldAlt } from 'react-icons/fa';
 import '../css/about.css';
-import aiqmlogo from '../../public/assets/aiqm_logo.jpeg';
-import directorImage from '../../public/assets/rvw.jpg';
 
 const About = () => {
+const aiqmlogo = "public/assets/aiqm_logo.jpeg";
+ const directorImage = "/assets/rvw.jpg";
   useEffect(() => {
     document.title = 'AIQM - About Us | Ali Institute For Qur\'an Memorization';
   }, []);
