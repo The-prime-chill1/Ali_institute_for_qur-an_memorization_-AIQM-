@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import '../css/gallery.css';
-import hifzBg from '../assets/hifz.jpg';
-import gradBg from '../assets/grad.jpg';
-import awarBg from '../assets/award.jpg';
-import hstBg from '../assets/hst.jpg';
-import schBg from '../assets/sch.jpg';
-import qrBg from '../assets/qr.jpg';
-import fpBg from '../assets/fp.jpg';
-import rmdBg from '../assets/rmd.jpg';
-import tjwBg from '../assets/tjw.jpg';
-import stdBg from '../assets/std.jpg';
-import lectBg from '../assets/lect.jpg';
-import onoBg from '../assets/ono.jpg';
+import hifzBg from '../../public/assets/hifz.jpg';
+import gradBg from '../../public/assets/grad.jpg';
+import awarBg from '../../public/assets/award.jpg';
+import hstBg from '../../public/assets/hst.jpg';
+import schBg from '../../public/assets/sch.jpg';
+import qrBg from '../../public/assets/qr.jpg';
+import fpBg from '../../public/assets/fp.jpg';
+import rmdBg from '../../public/assets/rmd.jpg';
+import tjwBg from '../../public/assets/tjw.jpg';
+import stdBg from '../../public/assets/std.jpg';
+import lectBg from '../../public/assets/lect.jpg';
+import onoBg from '../../public/assets/ono.jpg';
 
 const Gallery = () => {
   useEffect(() => {

@@ -35,7 +35,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Home.css';
-import heroBg from '../assets/hero.jpg';
+import heroBg from '../../public/assets/hero.jpg';
 
 const Hero = () => {
   useEffect(() => {

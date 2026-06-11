@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import '../css/news.css';
-import tjwBg from '../assets/tjw.jpg';
-import gradBg from '../assets/grad.jpg';
-import rmdBg from '../assets/rmd.jpg';
-import schBg from '../assets/sch.jpg';
-import qrBg from '../assets/qr.jpg';
-import heroBg from '../assets/hero.jpg';
+import tjwBg from '../../public/assets/tjw.jpg';
+import gradBg from '../../public/assets/grad.jpg';
+import rmdBg from '../../public/assets/rmd.jpg';
+import schBg from '../../public/assets/sch.jpg';
+import qrBg from '../../public/assets/qr.jpg';
+import heroBg from '../../public/assets/hero.jpg';
 
 const News = () => {
   useEffect(() => {

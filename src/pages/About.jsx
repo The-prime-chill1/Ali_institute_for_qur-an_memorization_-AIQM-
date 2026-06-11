@@ -2,8 +2,8 @@
 // import React, { useEffect } from 'react';
 import { FaRuler, FaHeart, FaStar, FaHandshake, FaShieldAlt } from 'react-icons/fa';
 import '../css/about.css';
-import aiqmlogo from '../assets/AIQM_logo.jpeg';
-import directorImage from '../assets/rvw.jpg';
+import aiqmlogo from '../../public/assets/AIQM_logo.jpeg';
+import directorImage from '../../public/assets/rvw.jpg';
 
 const About = () => {
   useEffect(() => {
