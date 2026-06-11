@@ -1,6 +1,6 @@
 // src/components/Statistics.jsx
 import React from 'react';
-import '../css/home.css';
+import '../css/Home.css';
 
 const Statistics = () => {
   const stats = [

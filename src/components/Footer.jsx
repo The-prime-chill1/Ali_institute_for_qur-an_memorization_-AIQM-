@@ -181,7 +181,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
-import '../css/footer.css';
+import '../css/Footer.css';
 
 const Footer = () => {
   const [newsletterEmail, setNewsletterEmail] = useState('');
