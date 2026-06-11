@@ -41,7 +41,7 @@ const Navbar = () => {
         <Link to="/" className="nav-logo">
           <div className="logo">
             <img
-              src="/assets/aiqm_Logo.jpeg"
+              src="/assets/aiqm_Logo.jpg"
               alt="AIQM Logo"
               style={{
                 width: '44px',
