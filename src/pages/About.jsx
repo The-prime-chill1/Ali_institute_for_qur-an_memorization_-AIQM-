@@ -3,7 +3,7 @@ import { FaRuler, FaHeart, FaStar, FaHandshake, FaShieldAlt } from 'react-icons/
 import '../css/about.css';
 
 const About = () => {
-const aiqmlogo = "public/assets/aiqm_logo.jpg";
+const aiqmlogo = "public/assets/aiqm_Logo.jpg";
  const directorImage = "/assets/rvw.jpg";
   useEffect(() => {
     document.title = 'AIQM - About Us | Ali Institute For Qur\'an Memorization';
