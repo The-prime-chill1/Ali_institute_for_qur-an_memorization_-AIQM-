@@ -84,7 +84,7 @@ const Reviews = () => {
     {
       id: 9,
       name: 'Aminah Odunsi',
-      role: 'Hafidh Graduate',
+      role: 'Hafidha Graduate',
       rating: 5,
       comment: 'AIQM provided a disciplined environment that made memorization easier for me. I highly recommend this institute.',
       date: 'May 2021',
