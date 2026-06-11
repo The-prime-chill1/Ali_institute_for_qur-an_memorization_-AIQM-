@@ -333,7 +333,7 @@ const About = () => {
               </div>
             </div>
             <div className="director-message">
-              <p>Assalamu Alaikum Warahmatullahi Wabarakatuh,</p>
+              <p>Assalamu Alaikum Warahmatullahi Wabarakatuh</p>
               <p>Welcome to Ali Institute For Qur'an Memorization (AIQM). Our institute was established with a clear vision: to create an environment where students can excel in Qur'an memorization while developing strong Islamic character.</p>
               <p>We believe that every child has the potential to become a Hafiz or Hafiza, and our dedicated team of qualified teachers works tirelessly to help each student achieve this noble goal. Our structured revision system, supportive boarding facilities, and comprehensive Islamic curriculum set us apart as a premier institution for Qur'anic education.</p>
               <p>I invite you to join our growing family of Huffaz who are making a positive impact on their communities. Together, we can preserve the Qur'an in the hearts of the next generation.</p>
